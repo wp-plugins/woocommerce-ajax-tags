@@ -40,11 +40,11 @@ Please backup first.
 2. WooCommerce Ajax Tags widget on the website, in default Twenty Twelve theme
 
 == Changelog ==
-***WooCommerce My Account Widget***
+***WooCommerce Ajax Tags ***
 = 2014.01.12 - version 0.0.2 =
 * Small bugfix when website is not in root path of url
 * Ready for WooCommerce 2.1 (Tested on WC 2.1. Beta 3)
 
-***WooCommerce My Account Widget***
+***WooCommerce Ajax Tags ***
 = 2013.06.21 - version 0.0.1 =
 * First release
