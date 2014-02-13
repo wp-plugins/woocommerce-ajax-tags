@@ -5,7 +5,7 @@ Author URI: http://www.geev.nl
 Tags: woocommerce, tags, widget
 Requires at least: 3.5
 Tested up to: 3.5.1
-Stable tag: 0.0.2
+Stable tag: 0.0.3
 License: GPLv2
 
 This plugin adds an AJAX tag widget to your WooCommerce shop.
@@ -40,11 +40,14 @@ Please backup first.
 2. WooCommerce Ajax Tags widget on the website, in default Twenty Twelve theme
 
 == Changelog ==
-***WooCommerce Ajax Tags***
+***WooCommerce My Account Widget***
+= 2014.02.12 - version 0.0.3 =
+* Fixed error on WC 2.1. Now fully working.
+
 = 2014.01.12 - version 0.0.2 =
 * Small bugfix when website is not in root path of url
 * Ready for WooCommerce 2.1 (Tested on WC 2.1. Beta 3)
 
-***WooCommerce Ajax Tags***
+***WooCommerce My Account Widget***
 = 2013.06.21 - version 0.0.1 =
 * First release

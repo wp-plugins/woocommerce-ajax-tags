@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/extend/plugins/woocommerce-ajax-tags/
 Description: WooCommerce Ajax Tags adds an AJAX tag widget to your WooCommerce shop.
 Author: Bart Pluijms
 Author URI: http://www.geev.nl/
-Version: 0.0.2
+Version: 0.0.3
 */
 class WooCommerceAjaxTagsWidget extends WP_Widget
 {
@@ -44,21 +44,24 @@ function widget($args, $instance)
 	} else {
 		$attribute_taxonomies = $woocommerce->get_attribute_taxonomies();
 	}
-	
+
 	if ( $attribute_taxonomies ) {
 		foreach ( $attribute_taxonomies as $tax ) {
 
 		   	$attribute = sanitize_title( $tax->attribute_name );
-		   	$taxonomy = $woocommerce->attribute_taxonomy_name( $attribute );
+			if ( version_compare( WOOCOMMERCE_VERSION, "2.0.99" ) >= 0 ) {
+				$taxonomy = wc_attribute_taxonomy_name( $attribute );
+			} else {
+				$taxonomy = $woocommerce->attribute_taxonomy_name( $attribute );
+			}
 	
 			// create an array of product attribute taxonomies
 			$_attributes_array[] = $taxonomy;
 		}
 	}
 	
-	//if(empty($_attributes_array)) return false;
-	
 	if ( !is_post_type_archive('product') && !is_tax( array_merge( $_attributes_array, array('product_cat', 'product_tag') ) )) return;
+	
 	if( is_tax('product_tag')) return;
 	echo $before_widget;
 	
