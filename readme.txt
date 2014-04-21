@@ -4,7 +4,7 @@ Plugin URI: http://wordpress.org/extend/plugins/woocommerce-ajax-tags/
 Author URI: http://www.geev.nl
 Tags: woocommerce, tags, widget
 Requires at least: 3.5
-Tested up to: 3.5.1
+Tested up to: 3.9
 Stable tag: 0.0.3
 License: GPLv2
 
