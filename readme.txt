@@ -4,20 +4,22 @@ Plugin URI: http://wordpress.org/extend/plugins/woocommerce-ajax-tags/
 Author URI: http://www.geev.nl
 Tags: woocommerce, tags, widget
 Requires at least: 3.5
-Tested up to: 3.9
+Tested up to: 4.0-beta3
 Stable tag: 0.0.3
 License: GPLv2
 
 This plugin adds an AJAX tag widget to your WooCommerce shop.
 == Description ==
-The _WooCommerce Ajax tags_ allows customers to sort products based on tags instead of variations. For example: 
-Show all products with tag "Tshirt" or show all products with tag "Jumper" and "Jersey". 
+The _WooCommerce Ajax tags_ allows customers to sort products based on tags instead of variations. For example:
+Show all products with tag "Tshirt" or show all products with tag "Jumper" and "Jersey".
 
-This plugin still needs some development, but if you just need a basic AJAX tag widget it will do. 
+This plugin still needs some development, but if you just need a basic AJAX tag widget it will do.
 We hope to release and updated version in a couple of weeks which works better.
 
+This plugin is compatible with Wordpress 4.0-beta3 and WooCommerce 2.2.0-bleeding.
+
 **Questions?**
-If you've questions, ideas or features request, please contact us via the support forum. 
+If you've questions, ideas or features request, please contact us via the support forum.
 
 
 **Features**
