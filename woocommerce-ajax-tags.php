@@ -5,14 +5,14 @@ Plugin URI: http://wordpress.org/extend/plugins/woocommerce-ajax-tags/
 Description: WooCommerce Ajax Tags adds an AJAX tag widget to your WooCommerce shop.
 Author: Bart Pluijms
 Author URI: http://www.geev.nl/
-Version: 0.0.3
+Version: 0.0.4
 */
 class WooCommerceAjaxTagsWidget extends WP_Widget
 {
-function WooCommerceAjaxTagsWidget()
+function __construct()
 {
 	$widget_ops = array('classname' => 'WooCommerceAjaxTagsWidget', 'description' => __( 'WooCommerce Ajax Tags sorts products based on tags', 'woo-atags' ) );
-    $this->WP_Widget('WooCommerceAjaxTagsWidget', __( 'WooCommerce Ajax Tags', 'woo-atags' ), $widget_ops);
+    parent::__construct('WooCommerceAjaxTagsWidget', __( 'WooCommerce Ajax Tags', 'woo-atags' ), $widget_ops);
 }
 
 function form($instance)
